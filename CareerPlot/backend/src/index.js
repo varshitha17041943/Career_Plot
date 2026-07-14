@@ -26,7 +26,7 @@ const __dirname = path.dirname(__filename);
 app.use('/api', apiRoutes);
 
 // Serve frontend static files
-const frontendPath = path.join(__dirname, '../../../frontend/dist');
+const frontendPath = path.join(__dirname, '../../frontend/dist');
 app.use(express.static(frontendPath));
 
 app.use((req, res) => {
